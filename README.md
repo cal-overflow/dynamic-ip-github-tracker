@@ -1,6 +1,28 @@
 # Dynamic IP Address tracker
 A simple script that can be leveraged to save a machine's public IP address to a GitHub repository for simple retrieval.
 
+---
+
+### Accessing the IP Address
+You can view the latest public IP Address in a couple different ways. One is best for scripting and the other for simply browsing in the web.
+
+**Note:** these URL's depend on your username. The URL will also be different if you have renamed the repository from its original `dynamic-ip-github-tracker`.
+
+#### Plaintext
+This is the recommended format if you would like to leverage this dynamic ip tracker in any scripts.
+
+```
+https://<token>@raw.githubusercontent.com/<username>/dynamic-ip-github-tracker/main/ip_address.txt
+```
+
+#### GitHub UI
+```
+https://github.com/<username>/dynamic-ip-github-tracker/blob/main/ip_address.txt 
+```
+
+**Note:** if the repository is private, this requires you to to be authenticated.
+
+---
 
 ### Setup
 #### 1. Setup a GitHub [Fine-Grained Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#fine-grained-personal-access-tokens)
@@ -44,23 +66,4 @@ See an example crontab entry for running the task hourly below.
 ```
 0 * * * * <path to cloned repository>/app.sh
 ```
-
----
-
-### Accessing the IP Address
-You can view the latest public IP Address in a couple different ways. One is best for scripting and the other for simply browsing in the web.
-
-**Note:** these URL's depend on your username. The URL will also be different if you have renamed the repository from its original `dynamic-ip-github-tracker`.
-
-#### Plaintext
-This is the recommended format if you would like to leverage this dynamic ip tracker in any scripts.
-
-```
-https://<token>@raw.githubusercontent.com/<username>/dynamic-ip-github-tracker/main/ip_address.txt
-```
-
-#### GitHub UI
-https://github.com/<username>/dynamic-ip-github-tracker/blob/main/ip_address.txt 
-
-**Note:** if the repository is private, this requires you to to be authenticated.
 
