@@ -41,7 +41,7 @@ Following the least-privilege-principle, you're token should be setup in a manne
   - **Account Permissions**
     - None
 
-Save a copy of this token. We'll use the token in step 3 and paste it into a file in step 3.
+You'll need to use the token later, so save a copy.
 
 #### 2. Clone repository
 Clone the repository (via HTTPS) onto the machine in which you need the IP address tracked.
